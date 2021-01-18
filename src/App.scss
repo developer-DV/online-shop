@@ -1,0 +1,138 @@
+$colorOrange: #f0a412;
+
+.wrapper {
+}
+
+header {
+    background-color: #f8f8fd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/************ Header Top ***********/
+
+.header-top {
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+    &__nav-item {
+        padding: 10px 15px;
+        line-height: 1.2;
+        text-transform: capitalize;
+        transition: 1s linear;
+        font-weight: 300;
+        &:hover a {
+            color: #7f8496;
+        }
+        a {
+            transition: 0.2s linear;
+            color: $colorOrange;
+        }
+    }
+    &__headline {
+        flex: 1 1 auto;
+        text-align: center;
+        color: #7f8496;
+    }
+    &__phone {
+        font-weight: bold;
+        color: #131930;
+    }
+    &__search {
+        position: relative;
+    }
+    &__search-text {
+        min-width: 230px;
+        margin-left: 50px;
+        padding: 7px 37px 7px 20px;
+
+        background-color: #ffffff;
+        color: #7f8496;
+
+        border: 1px solid #ebeced;
+        border-radius: 4px;
+        outline: none;
+        line-height: 1.2;
+        &:focus {
+            box-shadow: 0 5px 32px rgba(103, 122, 141, 0.17);
+        }
+    }
+    &__search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 28px;
+        background-color: transparent;
+        padding: 9px 6px 7px;
+        transition: 0.2s ease-in-out;
+        border: none;
+        outline: none;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+/************ Header Logo ***********/
+
+.header-logo {
+    &__inner {
+        position: relative;
+        text-align: center;
+        padding: 20px 0;
+    }
+    &__logo {
+        a {
+            cursor: pointer;
+        }
+    }
+    &__card {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.card {
+    &__link {
+        position: relative;
+        padding: 10px 0px 10px 32px;
+        color: black;
+        transition: 0.2s linear;
+        &:hover {
+            color: $colorOrange;
+            .card__count {
+                &::before {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    &__count {
+        display: inline-block;
+        line-height: 10px;
+        font-size: 16px;
+        &::before {
+            content: "\f290";
+            position: absolute;
+            display: inline-block;
+            top: 10px;
+            left: 0;
+            font-family: "icomoon";
+            font-size: 28px;
+            transition: 0.3s linear;
+        }
+    }
+}
