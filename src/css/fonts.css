@@ -1,9 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?zanbui");
-  src: url("../fonts/icomoon.eot?zanbui#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?zanbui") format("truetype"), url("../fonts/icomoon.woff?zanbui") format("woff"),
-    url("../fonts/icomoon.svg?zanbui#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?6m14fk");
+  src: url("../fonts/icomoon.eot?6m14fk#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?6m14fk") format("truetype"), url("../fonts/icomoon.woff?6m14fk") format("woff"),
+    url("../fonts/icomoon.svg?6m14fk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,6 +27,12 @@
 
 .icon-phone_iphone:before {
   content: "\e900";
+}
+.icon-angle-left:before {
+  content: "\f104";
+}
+.icon-angle-right:before {
+  content: "\f105";
 }
 .icon-shopping-bag:before {
   content: "\f290";

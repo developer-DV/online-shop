@@ -1,8 +1,21 @@
 import './App.scss';
 import Navigation from './components/navigation/Navigation';
+import Mainslider from './components/slider/Mainslider';
+import Category from './components/top-category/Category';
 import loupe from './img/loupe.png'
 
 function App() {
+
+  // const [menu, setMenu] = useState(null)
+
+  // const getMenu = () => {
+  //     return fetch("http://localhost:3000/menu").then(res => res.json())
+  // }
+
+  // useEffect(() => {
+  //     getMenu().then(response => { setMenu(() => (response)) })
+  // }, [])
+
   let menu = [
     {
       name: "Home",
@@ -151,6 +164,8 @@ function App() {
         </div>
         <Navigation menu={menu} closeSubmenu={closeSubmenuMouseLeave} showSubmenu={showSubmenuMouseEnter} />
       </header>
+      <Mainslider />
+      <Category />
     </div>
   );
 }

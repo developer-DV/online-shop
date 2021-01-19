@@ -1,0 +1,90 @@
+{
+    "menu": [
+        {
+            "name": "Home",
+            "link": "/home",
+            "submenu": null
+        },
+        {
+            "name": "Shop",
+            "link": "/shop",
+            "submenu": [
+                {
+                    "name": "Electronics",
+                    "link": "/electronics",
+                    "submenu": [
+                        {
+                            "name": "Cell Phones",
+                            "link": "/cellphones"
+                        },
+                        {
+                            "name": "Сomputers",
+                            "link": "/computers"
+                        },
+                        {
+                            "name": "Headphones",
+                            "link": "/headphones"
+                        }
+                    ]
+                },
+                {
+                    "name": "accessories",
+                    "link": "/accessories",
+                    "submenu": [
+                        {
+                            "name": "Cell Phones",
+                            "link": "/cellphones"
+                        },
+                        {
+                            "name": "Сomputers",
+                            "link": "/computers"
+                        },
+                        {
+                            "name": "Headphones",
+                            "link": "/headphones"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cell Phones",
+            "link": "/cellphones",
+            "submenu": [
+                {
+                    "name": "smartphones",
+                    "link": "/smartphones",
+                    "submenu": [
+                        {
+                            "name": "Iphone",
+                            "link": "/iphone"
+                        },
+                        {
+                            "name": "android",
+                            "link": "/android"
+                        },
+                        {
+                            "name": "huawei",
+                            "link": "/headphones"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Сomputers",
+            "link": "/computers",
+            "submenu": null
+        },
+        {
+            "name": "Headphones",
+            "link": "/headphones",
+            "submenu": null
+        },
+        {
+            "name": "Contacts",
+            "link": "/contacts",
+            "submenu": null
+        }
+    ]
+}
