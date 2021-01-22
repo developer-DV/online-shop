@@ -1,0 +1,93 @@
+$colorOrange: #f0a412;
+
+.shop__sidebar {
+    flex: 0 1 25%;
+    padding: 0 15px 0 0;
+    .box {
+        margin-bottom: 30px;
+        border: 1px solid #eeeeee;
+        padding: 10px;
+    }
+    .headline {
+        padding: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        line-height: 20px;
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .box-category {
+        &__items {
+            background-color: #f7f7f7;
+            padding: 20px 20px 10px 20px;
+        }
+        &__item {
+            display: block;
+            padding: 0 0 10px 0;
+            line-height: 20px;
+        }
+        &__link {
+            color: #000000;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            transition: 0.2s ease-out;
+            &:hover {
+                color: $colorOrange;
+            }
+        }
+    }
+
+    .box-filter {
+        &__filters {
+            background-color: #f7f7f7;
+            padding: 20px 20px 10px 20px;
+        }
+        &__filter {
+            margin-bottom: 20px;
+        }
+        &__link {
+            display: block;
+            position: relative;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #000000;
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background-color: #000000;
+                right: 0;
+                top: 7px;
+            }
+        }
+        &__list-group {
+            padding: 0 7px;
+        }
+        &__list-item {
+            margin-bottom: 10px;
+        }
+        &__label {
+            position: relative;
+            text-transform: capitalize;
+            font-size: 14px;
+            padding-left: 23px;
+            cursor: pointer;
+        }
+
+        &__input {
+            position: absolute;
+            margin: 2px 5px 0;
+            left: 0;
+        }
+
+        &__label-size {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import './App.scss';
 import Navigation from './components/navigation/Navigation';
+import Shop from './components/shop/Shop';
 import Mainslider from './components/slider/Mainslider';
 import Category from './components/top-category/Category';
 import loupe from './img/loupe.png'
@@ -166,6 +167,7 @@ function App() {
       </header>
       <Mainslider />
       <Category />
+      <Shop />
     </div>
   );
 }
