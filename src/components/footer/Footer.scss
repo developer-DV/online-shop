@@ -1,0 +1,64 @@
+$colorOrange: #f0a412;
+
+.footer {
+    background-color: #f7f7f7;
+    &__top {
+        padding: 60px 0 20px;
+    }
+    &__service {
+        display: flex;
+    }
+}
+
+.service-item {
+    flex: 1 1 33%;
+    padding: 15px;
+    display: flex;
+    &__img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        background-color: #ffffff;
+        transition: 0.3s ease-out;
+        &:hover {
+            background-color: $colorOrange;
+            color: #ffffff;
+        }
+    }
+    &__shippng::before {
+        font-family: "icomoon";
+        content: "\e9b0";
+        font-size: 28px;
+    }
+    &__support::before {
+        font-family: "icomoon";
+        content: "\e96c";
+        font-size: 28px;
+    }
+    &__gift::before {
+        font-family: "icomoon";
+        content: "\e99f";
+        font-size: 28px;
+    }
+    &__inner {
+        margin-left: 30px;
+        flex: 1 1 auto;
+        align-self: center;
+    }
+
+    &__headline {
+        text-transform: capitalize;
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.1px;
+    }
+    &__text {
+        line-height: 28px;
+        color: #7d7c7c;
+    }
+}

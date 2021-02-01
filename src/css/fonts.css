@@ -37,3 +37,12 @@
 .icon-shopping-bag:before {
   content: "\f290";
 }
+.icon-bubbles:before {
+  content: "\e96c";
+}
+.icon-gift:before {
+  content: "\e99f";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}

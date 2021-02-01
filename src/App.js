@@ -1,4 +1,5 @@
 import './App.scss';
+import Footer from './components/footer/Footer';
 import Navigation from './components/navigation/Navigation';
 import Shop from './components/shop/Shop';
 import Mainslider from './components/slider/Mainslider';
@@ -168,6 +169,7 @@ function App() {
       <Mainslider />
       <Category />
       <Shop />
+      <Footer />
     </div>
   );
 }
